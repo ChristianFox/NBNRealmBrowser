@@ -94,7 +94,7 @@ typedef NS_ENUM(NSUInteger, NBNRealmObjectBrowserSection) {
                 [self.detailNavigationController pushViewController:objectBrowser animated:YES];
             }
                 break;
-            case RLMPropertyTypeArray: {
+            case RLMPropertyTypeLinkingObjects: {
                 RLMResults *value = [self.object objectForKeyedSubscript:aProperty.name];
                 NBNRealmObjectsBrowser *objectsBrowser = [[NBNRealmObjectsBrowser alloc] initWithObjects:value];
                 [self.detailNavigationController pushViewController:objectsBrowser animated:YES];

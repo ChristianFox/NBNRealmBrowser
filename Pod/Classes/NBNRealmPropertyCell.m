@@ -63,7 +63,7 @@
         case RLMPropertyTypeObject: {
             self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         } break;
-        case RLMPropertyTypeArray: {
+        case RLMPropertyTypeLinkingObjects: {
             RLMResults *value = [object objectForKeyedSubscript:aProperty.name];
             self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             self.detailTextLabel.text = [NSString stringWithFormat:@"%lu objects", (unsigned long)value.count];

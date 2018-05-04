@@ -175,7 +175,7 @@
         case RLMPropertyTypeAny:
         case RLMPropertyTypeDate:
         case RLMPropertyTypeObject:
-        case RLMPropertyTypeArray:
+        case RLMPropertyTypeLinkingObjects:
             stringValue = [(NSData *)[object objectForKeyedSubscript:aProperty.name] description];
             break;
     }
